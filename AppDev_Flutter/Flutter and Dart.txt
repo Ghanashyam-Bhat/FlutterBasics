@@ -325,4 +325,44 @@ Form Widget
 We can easily create a form to get details from the user.
 We have to pass a global key to extract unique details of user for validation purposes.
 --------------------------------------------------------------------------------------
+11.dart
+--------------------------------------------------------------------------------------
+Icons Widget
+Icons are used to reprasent a graphical image
+Properties
+-Color
+-Size
+-Direction of text we specify
 
+--------------------------------------------------------------------------------------
+12.dart
+--------------------------------------------------------------------------------------
+Image Widget 
+
+This is used to display images in flutter
+
+An app consists of both code and asset resources
+Asset is something which is bundled with the app and is accessible at runtime.
+Asset can include static data, config file, Icons and images.
+Flutter support different image formats like: jpg, webpng, gif, animated gif, bmp and wbmp.
+
+Create a new directory -> paste images in that directory ->add path of directory in pubspec.yaml file (Uncomment asset section and add the file path) -> run $flutter pub get command in the terminal
+
+Take following into consideration while adding path in pubspec.yaml file
+
+https://stackoverflow.com/questions/59657146/getting-no-file-or-variants-found-for-asset-found-error-on-my-asset
+
+Then use Image.asset(file_path) to display image
+
+
+---->> Getting Error Unable to load asset: /images/1.jpg/
+Tried this : https://www.flutterbeads.com/unable-to-load-asset-in-flutter/
+
+
+
+Image can directly be loaded from internet using 
+Image.network() widget.
+//Faded Image functions can be used to give placeholder. If the image is taking time to load, a alternate image will be displayed in the place of image.
+
+--------------------------------------------------------------------------------------
+Card widget

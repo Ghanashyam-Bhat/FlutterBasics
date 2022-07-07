@@ -349,6 +349,8 @@ Flutter support different image formats like: jpg, webpng, gif, animated gif, bm
 Create a new directory -> paste images in that directory ->add path of directory in pubspec.yaml file (Uncomment asset section and add the file path) -> run $flutter pub get command in the terminal
 
 Take following into consideration while adding path in pubspec.yaml file
+//Just add relative folder name in pubspec.yaml file end with /
+
 
 https://stackoverflow.com/questions/59657146/getting-no-file-or-variants-found-for-asset-found-error-on-my-asset
 
@@ -357,8 +359,8 @@ Then use Image.asset(file_path) to display image
 
 ---->> Getting Error Unable to load asset: /images/1.jpg/
 Tried this : https://www.flutterbeads.com/unable-to-load-asset-in-flutter/
-
-
+Solved:
+//Giving relative path was giving error. Give absolute path
 
 Image can directly be loaded from internet using 
 Image.network() widget.
@@ -367,3 +369,58 @@ Image.network() widget.
 --------------------------------------------------------------------------------------
 Card widget
 
+border On Foreground
+Color - To give background color
+elevation - To gove shadow below the card
+margin - Used to customize space outside the card
+shape
+shadowcolor
+--------------------------------------------------------------------------------------
+14.dart
+--------------------------------------------------------------------------------------
+Drawer and tapbar
+Properties provided by scafflod widget
+
+Drawer is an invisble side screen, sliding left menu that generally contains importemt links in the application and occupies half of the screen when displayed.
+
+Tab-bar can be at bottom or top. We can have icons in tabbar and manipulate screen by clicking on the icons.
+(Like for sign in and signup window / or to navigate to different sections like in facebook)
+--------------------------------------------------------------------------------------
+15.dart
+--------------------------------------------------------------------------------------
+ALert Dialogue Widget
+
+Used to display alert / or confirm any action of the user.
+Can be displayed at the top or at the center of the screen.
+
+Features:
+
+title
+content
+content-padding
+action property - we can create buttons to interact
+shape
+
+4 types of alert dialogue widget
+-Basic Alert Dialogue widget
+-TextFild inside it
+-Confirmation Dialogue widget 
+-Select Dialogue widget
+--------------------------------------------------------------------------------------
+16.dart
+--------------------------------------------------------------------------------------
+
+List widget
+
+-Basic List
+-Long list
+-Grid List
+-Horizontal List
+
+--------------------------------------------------------------------------------------
+17.dart
+--------------------------------------------------------------------------------------
+Mini Project 2 : Calculator app
+
+18.dart
+--------------------------------------------------------------------------------------

@@ -10,20 +10,21 @@ class MyApp extends StatelessWidget {
     //Why use material app?   Without that I got this error
     //https://stackoverflow.com/questions/66181322/flutter-error-renderflex-with-multiple-children-has-a-null-textdirection
     return MaterialApp(
-          title: "Assets",
-          home: Scaffold(
-          appBar: AppBar(
+      title: "Assets",
+      home: Scaffold(
+        appBar: AppBar(
           title: Text("Assets-Images"),
-      ),
-            body: Column(
-              children: <Widget>[
-                 Image.asset("assets/images/1.jpg",height: 200,width: 200,),
-                Text("Why so serious ??"),
+        ),
+        body: Column(
+          children: <Widget>[
+          //Giving relative path was giving error. Give absolute path
+            Image.asset("/home/gb/StudioProjects/hello_world/assets/images/1.jpg",height: 200,width: 200,),
+            Text("Why so serious ??"),
 
-                Image.network("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",height: 200,width: 100,),
-                FadeInImage.assetNetwork(placeholder: "assets/images/1.jpg", image:"https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",height: 200,width: 100,)
-              ],
-            ),
+            Image.network("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",height: 200,width: 100,),
+            FadeInImage.assetNetwork(placeholder: "assets/images/1.jpg", image:"https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",height: 200,width: 100,)
+          ],
+        ),
       ),
     );
 

@@ -424,3 +424,184 @@ Mini Project 2 : Calculator app
 
 18.dart
 --------------------------------------------------------------------------------------
+Gridview and Toast 
+Gridview - Scrollable 2D array of widget
+
+count - Normal Gridview with childre provided manually or can be created using list generator under children property
+builder - When provinding list of data, instead of seperately using list generator method, we can directly use grid builder
+custom 
+extent - When we want to span over maximum cross axis space
+
+Toast - It is used to show notification. It is like container with minimum height and widhth
+
+To import external packages, visit https://pub.dev/ to get required package and specify it in pubspec.yaml. 
+Update the "dependencies" in the pubspec.yaml -> add version of package. Then import the package in the dart file.
+
+Different properties of toast: 
+Message
+Toast length - Message length
+Gravity -Where the message to be displayed
+Time in seconds
+Background color
+Text color
+Font size
+
+--------------------------------------------------------------------------------------
+19.dart
+--------------------------------------------------------------------------------------
+Checkbox and radio Buttons
+
+--------------------------------------------------------------------------------------
+20.dart
+--------------------------------------------------------------------------------------
+Progress Bar and Snack Bar
+Progress Bar is displayed to show the current progress of some action
+-Linear Progres Bar
+-Circular progress bar
+
+Snack Bar is used to display some short messages like Toast
+
+--------------------------------------------------------------------------------------
+21.dart
+--------------------------------------------------------------------------------------
+
+Tooltip and Slider
+Tooltip is a materialdesign widget, which lets the user know the functionality of the button on UI widget
+When a widget is equipped under tool tip, when the butotn is long pressed, the functionalities will be visible in a floating tooltip
+
+Slider- Material design widget used to store particular value. We can change the value by dragging the slider
+
+
+Now to create image swiper, add package called "Flutter Swiper"
+
+//Had trouble running code related to flutter swiper. 
+Error : https://dart.dev/null-safety/unsound-null-safety //No suppoting device found
+
+--------------------------------------------------------------------------------------
+22.dart
+--------------------------------------------------------------------------------------
+
+Table and Switch
+
+--------------------------------------------------------------------------------------
+23.dart
+--------------------------------------------------------------------------------------
+Calender Widget
+
+-Table Calender Widget - Install it in pubespec.yaml file
+ Customizable, animation, gesture handling, different format, automatic height adjustment
+ 
+ //All the functionalites have been changed since the tutorial - Study online 
+--------------------------------------------------------------------------------------
+24.dart
+--------------------------------------------------------------------------------------
+Navigation and Routing
+
+Method 1
+Navigation.push() and Navigation.pop()
+
+Method 2
+named route method- We have to specify the route inorder to nevigate
+--------------------------------------------------------------------------------------
+25.dart
+--------------------------------------------------------------------------------------
+Splash Screen/Launch Screen
+
+It is main page of the app, which contains introduction to app
+
+Method 1 - Timer method
+
+Method 2 - Package method
+
+
+--------------------------------------------------------------------------------------
+26.dart
+--------------------------------------------------------------------------------------
+
+Signup With Firebase
+
+-Create a Signup page
+-Create new firbase account in Firebase console
+-Connect the app with firebase 
+-Copy Application  id from Android/app/src/build.gradle to paste it in Firebase project
+-Copy SHA certificate fingerprint of android studio from gradle menu of new android project
+-Download the google-service.json file and add it to "android" folder
+
+-In app level gradle file add
+
+defaultConfig{
+ // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
+        applicationId "com.example.hello_world"
+        // You can update the following values to match your application needs.
+        // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-build-configuration.
+        minSdkVersion flutter.minSdkVersion
+        targetSdkVersion flutter.targetSdkVersion
+        multiDexEnabled  true
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "com.android.support:multidex-instrumentation:1.0.3"
+}
+
+apply plugin:  'com.google.gms.google-services'
+
+
+-In android level gradle file, add
+
+ dependencies {
+        classpath 'com.android.tools.build:gradle:7.1.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "com.google.gms:google-services:4.3.13"
+    }
+    
+- Add two packages in pubsepc.yaml file and import them
+firebase_auth: ^3.4.2
+firebase_core: ^1.19.2    
+
+
+
+
+
+HAVING ERROR INITIALIZING FIREBASE IN VOID MAIN
+https://stackoverflow.com/questions/70232931/firebaseoptions-cannot-be-null-when-creating-the-default-app
+
+HAVING PROBLEM WITH LOGGING IN FIREBASE CLI
+https://stackoverflow.com/questions/37526358/firebase-login-failed
+
+--------------------------------------------------------------------------------------
+27.dart
+--------------------------------------------------------------------------------------
+
+Signin with firebase
+
+
+--------------------------------------------------------------------------------------
+28.dart
+--------------------------------------------------------------------------------------
+
+Database
+
+Flutter provides 2 types of databases, we can create and manage databases by importing certain packages
+
+-sqflite plugin for  SQLite database =>
+*Light weight, time tested, severless, self contained, zero config, transactional SQL database
+*It can execute sql statements easily.
+*Advanced query methods to get info from database
+
+-Firebase database => This is provided by google. We can use different features of firebase database.
+*NoSQL database
+2 different database in firebase are
+*Cloud Firestore - deals with the collection property
+			- Each collection can have sub-collections
+*Realtime Database - This deals with json
+--------------------------------------------------------------------------------------
+--No Code Files--
+--------------------------------------------------------------------------------------
+Final Project - Age Calculator App
+
+30.dart
+--------------------------------------------------------------------------------------
+

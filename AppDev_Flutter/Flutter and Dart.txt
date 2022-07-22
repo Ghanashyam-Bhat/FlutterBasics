@@ -602,6 +602,22 @@ Flutter provides 2 types of databases, we can create and manage databases by imp
 --------------------------------------------------------------------------------------
 Final Project - Age Calculator App
 
-30.dart
+30.dart/Age_Calculator
 --------------------------------------------------------------------------------------
+Run project without null safety
+flutter run --no-sound-null-safety
+
+Build Flutter APK
+https://www.youtube.com/watch?v=qSn68_WLRKc&ab_channel=DashtoDartlang
+
+flutter clean
+flutter build apk --no-sound-null-safety
+
+
+Setup Physical Debugger
+https://developer.android.com/studio/debug/dev-options
+
+Change App name and Icon
+https://www.youtube.com/watch?v=eMHbgIgJyUQ&ab_channel=JohannesMilke
+
 

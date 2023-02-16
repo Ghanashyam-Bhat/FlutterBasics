@@ -563,6 +563,9 @@ firebase_core: ^1.19.2
 
 
 
+firebase logout
+firebase login --no-localhost
+flutterfire configure
 
 
 HAVING ERROR INITIALIZING FIREBASE IN VOID MAIN

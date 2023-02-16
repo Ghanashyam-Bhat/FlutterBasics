@@ -573,6 +573,7 @@ https://stackoverflow.com/questions/70232931/firebaseoptions-cannot-be-null-when
 
 HAVING PROBLEM WITH LOGGING IN FIREBASE CLI
 https://stackoverflow.com/questions/37526358/firebase-login-failed
+https://firebase.flutter.dev/docs/cli/
 
 --------------------------------------------------------------------------------------
 27.dart

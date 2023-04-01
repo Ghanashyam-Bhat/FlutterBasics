@@ -624,4 +624,5 @@ https://developer.android.com/studio/debug/dev-options
 Change App name and Icon
 https://www.youtube.com/watch?v=eMHbgIgJyUQ&ab_channel=JohannesMilke
 
-
+Build Failure
+https://stackoverflow.com/questions/66292426/how-do-you-fix-the-following-error-a-problem-occurred-evaluating-project-app
